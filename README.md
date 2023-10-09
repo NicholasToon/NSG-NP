@@ -39,4 +39,6 @@ RDP (Remote Desktop Protocol)
 ---
 ## Execution 
 
-tart **Remote Desktop Connection** and input the public IP address from WindowsVM into the **Computer** field. Click on **Connect**, then choose **More choices**, select **Use a different account**, and enter the credentials you set up for the virtual machine.
+![Image](https://i.imgur.com/TMeKthS.png)
+
+Start **Remote Desktop Connection** and input the public IP address from WindowsVM into the **Computer** field. Click on **Connect**, then choose **More choices**, select **Use a different account**, and enter the credentials you set up for the virtual machine. Click **Yes** when asked to verify; now you're in.
