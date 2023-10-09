@@ -5,7 +5,7 @@
 
 In this tutorial we will observe various kinds of network trafffic between our two virtual machines with Wireshark. We will also briefly explore the Network Security Groups (NSGs) function within the Azure suite in this tutorial. This exploration will include augmenting rules and simulating various scenarios that one might encounter when monitoring network traffic.
 
-This tutorial assumes that you have created virtual machines in Azure. If needed you can learn [here](https://github.com/NicholasToon/Creating-Resource-Groups-and-Deploying-Virtual-Machines-in-Azure) (Just skip to the VM section). The process will be the same for the Linux server: select **Ubuntu Server 20.04 LTS - x64 Gen2**, change **Authentication type** to **Password**. We will be connecting via SSH later. So, there is no need to have **SSH public key** selected now. 
+This tutorial assumes that you have created virtual machines in Azure. If needed you can learn [here](https://github.com/NicholasToon/Creating-Resource-Groups-and-Deploying-Virtual-Machines-in-Azure) (Just skip to the VM section). The process will be the same for the Linux server: select **Ubuntu Server 20.04 LTS - x64 Gen2**, change **Authentication type** to **Password**. We will be connecting via SSH later, so there is no need to have **SSH public key** selected. For the sake of ease, use the same credentials and write them down if needed (not recommended in a professional environment but okay for the sake of these low-level exercises).
 
 ## Environments and Technologies Used
 
