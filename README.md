@@ -1,9 +1,7 @@
 
 ![Image](https://i.imgur.com/xyzcfYE.png)
 
-# Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines
-
-
+# Virtual Machine Traffic Inspection
 
 ## Environments and Technologies Used
 
@@ -16,7 +14,7 @@
 ## Operating Systems Used
 
 - Windows 10 (21H2)
-- Ubuntu Server 20.04
+- Linux/Ubuntu Server 20.04
 
 <h2>High-Level Steps</h2>
 First, I created two virtual machines - one with Windows 10 and another with Ubuntu.
