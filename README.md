@@ -3,6 +3,8 @@
 
 # Virtual Machine Traffic Inspection
 
+In this tutorial we will observe various kinds of network trafffic between our two virtual machines with Wireshark. We will also briefly explore the Network Security Groups (NSGs) function within the Azure suite in this tutorial. This exploration will include augmenting rules and simulating various scenarios that one might encounter when monitoring network traffic.
+
 ## Environments and Technologies Used
 
 - Microsoft Azure (Virtual Machines/Compute)
