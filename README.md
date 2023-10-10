@@ -69,6 +69,6 @@ Back at the Azure portal, we will block ICMP traffic through LinuzVM02's firewal
 
 On WindowsVM01, we will observe that the ICMP ping requests are timing out. The port rule is in effect and functioning correctly. When we change the rule back to **allow**, traffic will resume without timeouts.
 
-![Image](
+![Image](https://i.imgur.com/QhZMLPf.png)
 
 Now, let's move on to SSH traffic. We will log into LinuxVM02 using the PowerShell SSH command. To filter the traffic, use either **ssh** or **tcp.port == 22**. In PowerShell, type the following command: **ssh Labuser@10.0.0.5**, press Enter, and then type **yes** and press enter. Enter the password you used during VM creation. You won't be able to see your password as you type it, but have faith that it is being entered. Remember that the username and password are extremely case-sensitive, so ensure they match exactly as entered when the VM was generated. Once successful, you can manipulate Linux through PowerShell if desired, all while observing the traffic of your manipulation with Wireshark. To exit the Ubuntu server, simply type **exit** and press Enter.
