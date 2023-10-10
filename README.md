@@ -61,6 +61,8 @@ Open up **Windows PowerShell** from the Start menu. Enter **ping 10.0.0.5** (you
 
 Afterwards, we will use a perpetual ping to the LinuxVM02 so we can manipulate the network security groups within LinuxVM02. The command to execute the perpetual ping is **ping 10.0.0.5 -t** (once again, your private IP address will probably be different).
 
-![Image](
+![Image](https://i.imgur.com/gl6UB98.png)
 
-Back at the Azure portal, we will be blocking ICMP traffic through the LinuzVM02's firewall, which will cancel out our perpetual ping we initiated back on the WindowsVM01. 
+Back at the Azure portal, we will block ICMP traffic through LinuzVM02's firewall, which will cancel out the perpetual ping we initiated on WindowsVM01. Click on **Network Settings** within the **Networking** tab, then choose **Create port rule**, followed by **Inbound port rule**. Since ICMP does not have a port number, you can either select ICMP or enter an asterisk in the **Destination port ranges**. Switch the action to **Deny** and adjust the priority and descriptors to your preference. Changing the priority isn't necessary for this specific exercise, but it may not always be the case.
+
+
