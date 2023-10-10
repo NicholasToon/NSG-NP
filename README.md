@@ -85,3 +85,9 @@ To observe DNS traffic, type **dns** or **udp.port == 53** to filter DNS traffic
 
 Lastly, we shall observe RDP traffic using the filter **tcp.port == 3389**. As you can see, Remote Desktop Protocol traffic is continuous because I have a live stream from my computer to the VM. Therefore, the traffic will continue to persist until the RDP is stopped.
 
+---
+## After Thoughts
+
+While there was no troubleshooting to be done, obeservations such as these are vital towards my future develpoment in IT. Thank you for your time.
+
+To see me install Active Directory using Azure click [here](https://github.com/NicholasToon/Installing-On-premises-Active-Directory-within-Azure-VMs)
