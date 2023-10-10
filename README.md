@@ -46,3 +46,19 @@ Start **Remote Desktop Connection** and input the public IP address from Windows
 ![Image](https://i.imgur.com/CJTTAng.png)
 
 Once inside the Windows VM, I choose to switch the privacy settings off. Next, open Microsoft Edge (ignore prompts) and download and install [Wireshark](https://www.wireshark.org/). The download will be under **Get Acquainted**. When configuring, simply continue to press **Next** and **I Agree**. If it doesn't open automatically, then open it via the Start menu.
+
+![Image](https://i.imgur.com/LkfzHWw.png)
+
+Double click **Ethernet**. You will now see the live traffic that is being transmitted throughout the virtual machine. Currently it is spamming traffic, which does not help us when it comes to troubleshooting and observation. We are first going to filter through ICMP (Internet Control Message Protocol), the protocol that Ping uses, Ping is used to test connectivity between devices and computers on a network. The traffic will appear to have stopped only becuase we are filtering a protocol that will need to be manually activated. We cannot ping **LinuxVM02** (our target) without knowing the ip address.
+
+![Image](https://i.imgur.com/WRdmqJ7.png)
+
+Return to the Azure portal to copy the **Private Ip address** of the Linux virtual machine. Return to WindowsVM.
+
+Open up **Windows PowerShell** from the Start menu. Enter **ping 10.0.0.5** (your private IP address may be different) and observe the requests and replies. We will then ping a website like www.google.com. Enter **ping www.google.com -4**. The "-4" indicates that we will receive the traffic in IPv4. You can expand the bars under the packet information for further insight into what gets sent through a simple command such as ping.
+
+Afterwards, we will use a perpetual ping to the LinuxVM02 so we can manipulate the network security groups within LinuxVM02. The command to execute the perpetual ping is **ping 10.0.0.5 -t** (once again, your private IP address will probably be different).
+
+
+
+
