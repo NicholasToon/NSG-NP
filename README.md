@@ -42,3 +42,7 @@ RDP (Remote Desktop Protocol)
 ![Image](https://i.imgur.com/TMeKthS.png)
 
 Start **Remote Desktop Connection** and input the public IP address from WindowsVM into the **Computer** field. Click on **Connect**, then choose **More choices**, select **Use a different account**, and enter the credentials you set up for the virtual machine. Click **Yes** when asked to verify; now you're in.
+
+![Image](https://i.imgur.com/CJTTAng.png)
+
+Once inside the Windows VM, I choose to switch the privacy settings off. Next, open Microsoft Edge (ignore prompts) and download and install [Wireshark](https://www.wireshark.org/). The download will be under **Get Acquainted**. When configuring, simply continue to press **Next** and **I Agree**. If it doesn't open automatically, then open it via the Start menu.
