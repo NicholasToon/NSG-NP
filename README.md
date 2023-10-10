@@ -55,10 +55,12 @@ Double click **Ethernet**. You will now see the live traffic that is being trans
 
 Return to the Azure portal to copy the **Private Ip address** of the Linux virtual machine. Return to WindowsVM.
 
+![Image](https://i.imgur.com/MI5jSQq.png)
+
 Open up **Windows PowerShell** from the Start menu. Enter **ping 10.0.0.5** (your private IP address may be different) and observe the requests and replies. We will then ping a website like www.google.com. Enter **ping www.google.com -4**. The "-4" indicates that we will receive the traffic in IPv4. You can expand the bars under the packet information for further insight into what gets sent through a simple command such as ping.
 
 Afterwards, we will use a perpetual ping to the LinuxVM02 so we can manipulate the network security groups within LinuxVM02. The command to execute the perpetual ping is **ping 10.0.0.5 -t** (once again, your private IP address will probably be different).
 
+![Image](
 
-
-
+Back at the Azure portal, we will be blocking ICMP traffic through the LinuzVM02's firewall, which will cancel out our perpetual ping we initiated back on the WindowsVM01. 
