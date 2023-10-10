@@ -83,5 +83,5 @@ To observe DNS traffic, type **dns** or **udp.port == 53** to filter DNS traffic
 
 ![Image](https://i.imgur.com/sVivebm.png)
 
-Lastly, we shall observe RDP traffic. Use **tcp.port == 3389** for filtering. As you can see, Remote Desktop Protocol traffic is perpetual because I have a live stream from my computer to the VM. So, traffic will continue to spam until the devices are disconnected.
+Lastly, we shall observe RDP traffic using the filter **tcp.port == 3389**. As you can see, Remote Desktop Protocol traffic is continuous because I have a live stream from my computer to the VM. Therefore, the traffic will continue to persist until the devices are disconnected.
 
