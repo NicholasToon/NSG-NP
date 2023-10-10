@@ -63,6 +63,6 @@ Afterwards, we will use a perpetual ping to the LinuxVM02 so we can manipulate t
 
 ![Image](https://i.imgur.com/gl6UB98.png)
 
-Back at the Azure portal, we will block ICMP traffic through LinuzVM02's firewall, which will cancel out the perpetual ping we initiated on WindowsVM01. Click on **Network Settings** within the **Networking** tab, then choose **Create port rule**, followed by **Inbound port rule**. Since ICMP does not have a port number, you can either select ICMP or enter an asterisk in the **Destination port ranges**. Switch the action to **Deny** and adjust the priority and descriptors to your preference. Changing the priority isn't necessary for this specific exercise, but it may not always be the case.
+Back at the Azure portal, we will block ICMP traffic through LinuzVM02's firewall, which will cancel out the perpetual ping we initiated on WindowsVM01. Click on **Network Settings** within the **Networking** tab, then choose **Create port rule**, followed by **Inbound port rule**. Since ICMP does not have a port number, you can either select ICMP or enter an asterisk in the **Destination port ranges**. Switch the action to **Deny** and adjust the priority and descriptors to your preference.Changing the priority isn't necessary for this specific exercise, but it may not always be the case; the higher the number, the higher the priority.
 
 
