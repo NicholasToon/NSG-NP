@@ -72,3 +72,15 @@ On WindowsVM01, we will observe that the ICMP ping requests are timing out. The 
 ![Image](https://i.imgur.com/QhZMLPf.png)
 
 Now, let's move on to SSH traffic. We will log into LinuxVM02 using the PowerShell SSH command. To filter the traffic, use either **ssh** or **tcp.port == 22**. In PowerShell, type the following command: **ssh Labuser@10.0.0.5**, press Enter, and then type **yes** and press enter. Enter the password you used during VM creation. You won't be able to see your password as you type it, but have faith that it is being entered. Remember that the username and password are extremely case-sensitive, so ensure they match exactly as entered when the VM was generated. Once successful, you can manipulate Linux through PowerShell if desired, all while observing the traffic of your manipulation with Wireshark. To exit the Ubuntu server, simply type **exit** and press Enter.
+
+![Image](https://i.imgur.com/rgiMZWD.png)
+
+Next, DHCP. Filter by typing **dhcp** or **udp.port == 67 (or) 68**. We will creating and observing traffic by forcing the renewal of our ip address. Type **ipconfig /renew**, this will temporarily disconnect us while it generates a new ip for us. If you did not need to re-connect then you can observe the traffic in the log.
+
+![Image](https://i.imgur.com/uRBlSGR.png)
+
+Observing DNS traffic. type **dns**, or type **udp.port == 53** to filter dns traffic. Press the green fin **Restart Current Capture** to clean the state and observe anew. After doing so, type **nslookup** into powershell. You can see the traffic from looking up www.amazon.com and www.google.com. These sites carry heavy loads and it is intruiging to see it through raw traffic. You can see the different ip addresses that amazon and google use as well as their aliases. 
+
+![Image](
+
+
