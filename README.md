@@ -17,7 +17,7 @@ This tutorial assumes that you have created virtual machines in Azure. If needed
 
 ## Operating Systems Used
 
-- Windows 10 (21H2)
+- Windows 10 Pro (22H2)
 - Linux/Ubuntu Server 20.04
 
 ## Network Protocol Breakdown
