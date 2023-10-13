@@ -7,6 +7,8 @@ In this tutorial we will observe various kinds of network trafffic between our t
 
 This tutorial assumes that you have created virtual machines in Azure. If needed you can learn [here](https://github.com/NicholasToon/Creating-Resource-Groups-and-Deploying-Virtual-Machines-in-Azure) (Just skip to the VM section). The process will be the same for the Linux server: select **Ubuntu Server 20.04 LTS - x64 Gen2**, keep it in the same region. Change **Authentication type** to **Password**. We will be connecting via SSH later, so there is no need to have **SSH public key** selected. For the sake of ease, use the same credentials and write them down if needed (not recommended in a professional environment but okay for the sake of these low-level exercises). Go to the **Networking** tab and select the **Virtual network** that your first Windows VM created. Skip forward and **Create**.
 
+**Note: If you have trouble finding the VNet from VM1 in the Networking section of VM2, restart VM1, and it should appear when you are selecting the VNet for VM2.**
+
 ## Environments and Technologies Used
 
 - Microsoft Azure (Virtual Machines/Compute)
