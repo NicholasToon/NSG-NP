@@ -12,7 +12,7 @@ This tutorial assumes that you have created virtual machines in Azure. If needed
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop Connection (RDC)
 - Wireshark (Protocol Analyzer)
-- Command-Line Tools 
+- Windows Powershell 
 - Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
 
 ## Operating Systems Used
